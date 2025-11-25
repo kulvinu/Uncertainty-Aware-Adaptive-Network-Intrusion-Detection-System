@@ -1,0 +1,143 @@
+{
+  "Cross_Dataset_Evaluation": {
+    "evaluation_type": "CICIDS2017_to_CICIDS2018_generalization",
+    "timestamp": "2025-09-14 16:12:05",
+    "dataset_transition": {
+      "source": "CICIDS2017",
+      "target": "CICIDS2018",
+      "target_samples": 100000,
+      "target_features": 69,
+      "target_class_distribution": {
+        "0": 50000,
+        "1": 50000
+      }
+    }
+  },
+  "Performance_Metrics": {
+    "accuracy": 0.72435,
+    "precision": 0.7269434209061817,
+    "recall": 0.72435,
+    "f1_score": 0.7235602385544267,
+    "total_samples": 20000,
+    "uncertain_samples": 46,
+    "uncertainty_rate": 0.0023
+  },
+  "Cross_Dataset_Analysis": {
+    "evaluation_time": 62.506404876708984,
+    "samples_per_second": 1599.836051957322,
+    "generalization_accuracy": 0.72435,
+    "generalization_f1": 0.7235602385544267,
+    "cicids2017_accuracy": 0.8524500000000002,
+    "generalization_gap": 0.1281000000000001,
+    "generalization_retention": 0.8497272567305999
+  },
+  "Detailed_Results": {
+    "basic_metrics": {
+      "accuracy": 0.72435,
+      "precision": 0.7269434209061817,
+      "recall": 0.72435,
+      "f1_score": 0.7235602385544267,
+      "total_samples": 20000,
+      "uncertain_samples": 46,
+      "uncertainty_rate": 0.0023
+    },
+    "confusion_matrix": [
+      [
+        7778,
+        2222
+      ],
+      [
+        3291,
+        6709
+      ]
+    ],
+    "attack_analysis": {
+      "attacked_samples": {
+        "count": 4,
+        "accuracy": 0.75,
+        "attack_success_rate": 0.0
+      },
+      "clean_samples": {
+        "count": 19996,
+        "accuracy": 0.7243448689737948
+      },
+      "attack_distribution": {
+        "dataset_attack": 17045,
+        "no_attack": 2951,
+        "mimicry_attack": 2,
+        "evasion_attack": 2
+      }
+    },
+    "uncertainty_calibration": {
+      "certain_accuracy": 0.7240152350405934,
+      "uncertain_accuracy": 0.8695652173913043,
+      "calibration_quality": -0.14554998235071093,
+      "uncertainty_stats": {
+        "mean": 2.0659677873165387e-08,
+        "std": 1.3239317791112384e-06,
+        "min": 0.0,
+        "max": 0.00013446308730635792
+      }
+    },
+    "meta_learning": {
+      "meta_accuracy": 0.8695652173913043,
+      "total_meta_predictions": 46,
+      "confidence_stats": {
+        "mean": 0.5822069599043989,
+        "std": 0.049511214853271826,
+        "min": 0.4881848931312561,
+        "max": 0.736938171539617
+      },
+      "inference_timing": {
+        "mean_ms": 1.9819425499957541,
+        "std_ms": 0.06389885977961211,
+        "max_ms": 2.2573471069335938
+      }
+    },
+    "timing_analysis": {
+      "defender_inference": {
+        "mean_ms": 1.653327202796936,
+        "std_ms": 0.06255019305973969,
+        "percentile_95_ms": 1.7087459564208984
+      },
+      "total_inference": {
+        "mean_ms": 3.0138521909713747,
+        "std_ms": 0.1298303831237858,
+        "percentile_95_ms": 3.1154274940490723
+      }
+    },
+    "adversarial_dynamics": {
+      "accuracy_trend": {
+        "initial": 0.7187366066807044,
+        "final": 0.7246471574849802,
+        "volatility": 0.07250929068808619
+      },
+      "attack_success_trend": {
+        "initial": 0.0,
+        "final": 0.0,
+        "volatility": 0.0
+      }
+    },
+    "per_class_performance": {
+      "class_0": {
+        "accuracy": 0.7778,
+        "precision": 0.0,
+        "recall": 0.0,
+        "sample_count": "10000",
+        "uncertainty_rate": 0.0036
+      },
+      "class_1": {
+        "accuracy": 0.6709,
+        "precision": 1.0,
+        "recall": 0.6709,
+        "sample_count": "10000",
+        "uncertainty_rate": 0.001
+      }
+    },
+    "evaluation_stats": {
+      "total_episodes": 100,
+      "total_steps": 20000,
+      "avg_steps_per_episode": 200.0
+    }
+  }
+}

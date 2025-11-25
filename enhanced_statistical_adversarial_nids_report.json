@@ -1,0 +1,563 @@
+{
+  "System Configuration": {
+    "Device": "cuda",
+    "Features": 69,
+    "Phases Completed": 3,
+    "Meta-Learning Type": "Statistical-Neural Hybrid (Enhanced REPTILE)",
+    "Statistical Priors": "Feature-based Attack Prototypes"
+  },
+  "Statistical Meta-Learning Performance": {
+    "average_statistical_accuracy": 0.5771822328017017,
+    "average_hybrid_accuracy": 0.7547148563053868,
+    "average_improvement": 0.17753262350368507,
+    "improvement_stability": 0.2252397700938704,
+    "statistical_method_reliability": 0.45121951219512196
+  },
+  "Attack Prototype Analysis": {
+    "total_prototypes": 85,
+    "prototype_sizes": {
+      "adaptive_0": 2400,
+      "adaptive_1": 9584,
+      "adaptive_2": 4921,
+      "adaptive_3": 3565,
+      "adaptive_4": 1210,
+      "adaptive_5": 642,
+      "adaptive_6": 69,
+      "adaptive_7": 37,
+      "adaptive_8": 39,
+      "adaptive_9": 1477,
+      "adaptive_10": 148,
+      "adaptive_11": 79,
+      "adaptive_12": 46,
+      "adaptive_13": 110,
+      "adaptive_14": 146,
+      "adaptive_15": 32,
+      "adaptive_16": 269,
+      "adaptive_17": 213,
+      "adaptive_18": 606,
+      "adaptive_19": 143,
+      "adaptive_20": 32,
+      "adaptive_21": 3,
+      "adaptive_22": 290,
+      "adaptive_23": 46,
+      "adaptive_24": 17,
+      "adaptive_25": 149,
+      "adaptive_26": 48,
+      "adaptive_27": 9,
+      "adaptive_28": 5,
+      "adaptive_29": 1,
+      "adaptive_30": 56,
+      "adaptive_31": 19,
+      "adaptive_32": 47,
+      "adaptive_33": 20,
+      "adaptive_34": 47,
+      "adaptive_35": 13,
+      "adaptive_36": 30,
+      "adaptive_37": 13,
+      "adaptive_38": 1,
+      "adaptive_39": 1,
+      "adaptive_40": 8,
+      "adaptive_41": 5,
+      "adaptive_42": 4,
+      "adaptive_43": 7,
+      "adaptive_44": 48,
+      "adaptive_45": 20,
+      "adaptive_46": 12,
+      "adaptive_47": 9,
+      "adaptive_48": 17,
+      "adaptive_49": 2,
+      "adaptive_50": 4,
+      "adaptive_51": 4,
+      "adaptive_52": 1,
+      "adaptive_53": 368,
+      "adaptive_54": 4,
+      "adaptive_55": 4,
+      "adaptive_56": 1,
+      "adaptive_57": 3,
+      "adaptive_58": 1,
+      "adaptive_59": 1,
+      "adaptive_60": 1,
+      "adaptive_61": 1,
+      "adaptive_62": 2,
+      "adaptive_63": 3,
+      "adaptive_64": 1,
+      "adaptive_65": 5,
+      "adaptive_66": 6,
+      "adaptive_67": 3,
+      "adaptive_68": 2,
+      "adaptive_69": 2,
+      "adaptive_70": 6,
+      "adaptive_71": 1,
+      "adaptive_72": 1,
+      "adaptive_73": 1,
+      "adaptive_74": 4,
+      "adaptive_75": 1,
+      "adaptive_76": 1,
+      "adaptive_77": 1,
+      "adaptive_78": 3,
+      "adaptive_79": 2,
+      "adaptive_80": 13,
+      "adaptive_81": 1,
+      "adaptive_82": 1,
+      "adaptive_83": 1,
+      "adaptive_84": 1
+    },
+    "average_prototype_size": 319.6470588235294
+  },
+  "Phase Results": {
+    "Phase 1": {
+      "basic_metrics": {
+        "accuracy": 0.7226,
+        "precision": 0.8816348165167488,
+        "recall": 0.7226,
+        "f1_score": 0.7570927016337794,
+        "total_samples": 10000,
+        "uncertain_samples": 476,
+        "uncertainty_rate": 0.0476
+      },
+      "confusion_matrix": [
+        [
+          5617,
+          2689
+        ],
+        [
+          85,
+          1609
+        ]
+      ],
+      "attack_analysis": {
+        "clean_samples": {
+          "count": 10000,
+          "accuracy": 0.7226
+        },
+        "attack_distribution": {
+          "no_attack": 10000
+        }
+      },
+      "uncertainty_calibration": {
+        "certain_accuracy": 0.7386602267954641,
+        "uncertain_accuracy": 0.4012605042016807,
+        "calibration_quality": 0.33739972259378337,
+        "uncertainty_stats": {
+          "mean": 2.1527555441722967e-06,
+          "std": 9.07259616241589e-06,
+          "min": 0.0,
+          "max": 0.0002600611420348287
+        }
+      },
+      "meta_learning": {
+        "meta_accuracy": 0.4012605042016807,
+        "total_meta_predictions": 476,
+        "confidence_stats": {
+          "mean": 0.6475516422410378,
+          "std": 0.06648193417614671,
+          "min": 0.5174070775508881,
+          "max": 0.8451569692279431
+        },
+        "inference_timing": {
+          "mean_ms": 1.93141438380009,
+          "std_ms": 0.05851173504817587,
+          "max_ms": 2.3262500762939453
+        }
+      },
+      "timing_analysis": {
+        "defender_inference": {
+          "mean_ms": 1.6451067924499512,
+          "std_ms": 0.07217884406928785,
+          "percentile_95_ms": 1.6989707946777344
+        },
+        "total_inference": {
+          "mean_ms": 1.7571401357650758,
+          "std_ms": 0.4150650656289592,
+          "percentile_95_ms": 2.473390102386474
+        }
+      },
+      "adversarial_dynamics": {
+        "accuracy_trend": {
+          "initial": 0.7007272041432331,
+          "final": 0.7211053796030712,
+          "volatility": 0.08104239189746013
+        },
+        "attack_success_trend": {
+          "initial": 0.0,
+          "final": 0.0,
+          "volatility": 0.0
+        }
+      },
+      "per_class_performance": {
+        "class_0": {
+          "accuracy": 0.6762581266554298,
+          "precision": 0.0,
+          "recall": 0.0,
+          "sample_count": "8306",
+          "uncertainty_rate": 0.04418492655911389
+        },
+        "class_1": {
+          "accuracy": 0.9498229043683589,
+          "precision": 1.0,
+          "recall": 0.9498229043683589,
+          "sample_count": "1694",
+          "uncertainty_rate": 0.06434474616292798
+        }
+      },
+      "evaluation_stats": {
+        "total_episodes": 50,
+        "total_steps": 10000,
+        "avg_steps_per_episode": 200.0
+      }
+    },
+    "Phase 2": {
+      "basic_metrics": {
+        "accuracy": 0.7679,
+        "precision": 0.896463482205652,
+        "recall": 0.7679,
+        "f1_score": 0.7957836210057808,
+        "total_samples": 10000,
+        "uncertain_samples": 50,
+        "uncertainty_rate": 0.005
+      },
+      "confusion_matrix": [
+        [
+          6008,
+          2285
+        ],
+        [
+          36,
+          1671
+        ]
+      ],
+      "attack_analysis": {
+        "attacked_samples": {
+          "count": 3,
+          "accuracy": 0.6666666666666666,
+          "attack_success_rate": 0.0
+        },
+        "clean_samples": {
+          "count": 9997,
+          "accuracy": 0.7679303791137341
+        },
+        "attack_distribution": {
+          "no_attack": 4495,
+          "dataset_attack": 5502,
+          "mimicry_attack": 1,
+          "evasion_attack": 2
+        }
+      },
+      "uncertainty_calibration": {
+        "certain_accuracy": 0.769246231155779,
+        "uncertain_accuracy": 0.5,
+        "calibration_quality": 0.26924623115577895,
+        "uncertainty_stats": {
+          "mean": 1.2512913252271185e-07,
+          "std": 8.945818117718705e-06,
+          "min": 0.0,
+          "max": 0.0008897572988644242
+        }
+      },
+      "meta_learning": {
+        "meta_accuracy": 0.5,
+        "total_meta_predictions": 50,
+        "confidence_stats": {
+          "mean": 0.6116350534502781,
+          "std": 0.06020736212615751,
+          "min": 0.5424257576465606,
+          "max": 0.7855914513723716
+        },
+        "inference_timing": {
+          "mean_ms": 1.9588661193847656,
+          "std_ms": 0.06063795560495567,
+          "max_ms": 2.340555191040039
+        }
+      },
+      "timing_analysis": {
+        "defender_inference": {
+          "mean_ms": 1.6524397611618042,
+          "std_ms": 0.07720126862164568,
+          "percentile_95_ms": 1.7118453979492188
+        },
+        "total_inference": {
+          "mean_ms": 3.0148142099380495,
+          "std_ms": 0.17381067381368567,
+          "percentile_95_ms": 3.114473819732666
+        }
+      },
+      "adversarial_dynamics": {
+        "accuracy_trend": {
+          "initial": 0.7681166206800102,
+          "final": 0.7661487853643714,
+          "volatility": 0.06746989393293461
+        },
+        "attack_success_trend": {
+          "initial": 0.0,
+          "final": 0.0,
+          "volatility": 0.0
+        }
+      },
+      "per_class_performance": {
+        "class_0": {
+          "accuracy": 0.7244664174605089,
+          "precision": 0.0,
+          "recall": 0.0,
+          "sample_count": "8293",
+          "uncertainty_rate": 0.00590859761244423
+        },
+        "class_1": {
+          "accuracy": 0.9789103690685413,
+          "precision": 1.0,
+          "recall": 0.9789103690685413,
+          "sample_count": "1707",
+          "uncertainty_rate": 0.0005858230814294083
+        }
+      },
+      "evaluation_stats": {
+        "total_episodes": 50,
+        "total_steps": 10000,
+        "avg_steps_per_episode": 200.0
+      }
+    },
+    "Phase 3": {
+      "basic_metrics": {
+        "accuracy": 0.8118,
+        "precision": 0.9003292833439049,
+        "recall": 0.8118,
+        "f1_score": 0.8320787737709859,
+        "total_samples": 10000,
+        "uncertain_samples": 80,
+        "uncertainty_rate": 0.008
+      },
+      "confusion_matrix": [
+        [
+          6450,
+          1810
+        ],
+        [
+          72,
+          1668
+        ]
+      ],
+      "attack_analysis": {
+        "attacked_samples": {
+          "count": 1,
+          "accuracy": 1.0,
+          "attack_success_rate": 0.0
+        },
+        "clean_samples": {
+          "count": 9999,
+          "accuracy": 0.8117811781178118
+        },
+        "attack_distribution": {
+          "dataset_attack": 7150,
+          "no_attack": 2849,
+          "mimicry_attack": 1
+        }
+      },
+      "uncertainty_calibration": {
+        "certain_accuracy": 0.8123991935483871,
+        "uncertain_accuracy": 0.7375,
+        "calibration_quality": 0.07489919354838703,
+        "uncertainty_stats": {
+          "mean": 3.270520884274027e-08,
+          "std": 1.1545417347922105e-06,
+          "min": 0.0,
+          "max": 0.00010586658754618838
+        }
+      },
+      "meta_learning": {
+        "meta_accuracy": 0.7375,
+        "total_meta_predictions": 80,
+        "confidence_stats": {
+          "mean": 0.5857626710280807,
+          "std": 0.04662008665466892,
+          "min": 0.5316446721553802,
+          "max": 0.808199374484685
+        },
+        "inference_timing": {
+          "mean_ms": 1.9656926393508911,
+          "std_ms": 0.040601994409874616,
+          "max_ms": 2.2144317626953125
+        }
+      },
+      "timing_analysis": {
+        "defender_inference": {
+          "mean_ms": 1.6607868909835815,
+          "std_ms": 0.07714088061503255,
+          "percentile_95_ms": 1.728057861328125
+        },
+        "total_inference": {
+          "mean_ms": 3.0342419385910038,
+          "std_ms": 0.20168865703758163,
+          "percentile_95_ms": 3.161442279815674
+        }
+      },
+      "adversarial_dynamics": {
+        "accuracy_trend": {
+          "initial": 0.7906920100425548,
+          "final": 0.8052618693534099,
+          "volatility": 0.06803560523674256
+        },
+        "attack_success_trend": {
+          "initial": 0.0,
+          "final": 0.0,
+          "volatility": 0.0
+        }
+      },
+      "per_class_performance": {
+        "class_0": {
+          "accuracy": 0.7808716707021792,
+          "precision": 0.0,
+          "recall": 0.0,
+          "sample_count": "8260",
+          "uncertainty_rate": 0.008716707021791767
+        },
+        "class_1": {
+          "accuracy": 0.9586206896551724,
+          "precision": 1.0,
+          "recall": 0.9586206896551724,
+          "sample_count": "1740",
+          "uncertainty_rate": 0.004597701149425287
+        }
+      },
+      "evaluation_stats": {
+        "total_episodes": 50,
+        "total_steps": 10000,
+        "avg_steps_per_episode": 200.0
+      }
+    }
+  },
+  "Final Test Results": {
+    "basic_metrics": {
+      "accuracy": 0.8147,
+      "precision": 0.9045374735381417,
+      "recall": 0.8147,
+      "f1_score": 0.8356198709928633,
+      "total_samples": 20000,
+      "uncertain_samples": 125,
+      "uncertainty_rate": 0.00625
+    },
+    "confusion_matrix": [
+      [
+        13076,
+        3587
+      ],
+      [
+        119,
+        3218
+      ]
+    ],
+    "attack_analysis": {
+      "clean_samples": {
+        "count": 20000,
+        "accuracy": 0.8147
+      },
+      "attack_distribution": {
+        "dataset_attack": 14306,
+        "no_attack": 5694
+      }
+    },
+    "uncertainty_calibration": {
+      "certain_accuracy": 0.8158490566037736,
+      "uncertain_accuracy": 0.632,
+      "calibration_quality": 0.1838490566037736,
+      "uncertainty_stats": {
+        "mean": 2.6398928595981514e-08,
+        "std": 8.18062819339918e-07,
+        "min": 0.0,
+        "max": 7.5840151112061e-05
+      }
+    },
+    "meta_learning": {
+      "meta_accuracy": 0.632,
+      "total_meta_predictions": 125,
+      "confidence_stats": {
+        "mean": 0.5955181767221309,
+        "std": 0.05516921090151685,
+        "min": 0.5260863840579987,
+        "max": 0.8053564184081108
+      },
+      "inference_timing": {
+        "mean_ms": 1.961263656616211,
+        "std_ms": 0.048938923014099085,
+        "max_ms": 2.3131370544433594
+      }
+    },
+    "timing_analysis": {
+      "defender_inference": {
+        "mean_ms": 1.6623555541038513,
+        "std_ms": 1.80250017275411,
+        "percentile_95_ms": 1.6932487487792969
+      },
+      "total_inference": {
+        "mean_ms": 3.024913513660431,
+        "std_ms": 1.8140787796221427,
+        "percentile_95_ms": 3.082060813903808
+      }
+    },
+    "adversarial_dynamics": {
+      "accuracy_trend": {
+        "initial": 0.8093566722142305,
+        "final": 0.8132344595575978,
+        "volatility": 0.0634495785927014
+      },
+      "attack_success_trend": {
+        "initial": 0.0,
+        "final": 0.0,
+        "volatility": 0.0
+      }
+    },
+    "per_class_performance": {
+      "class_0": {
+        "accuracy": 0.7847326411810598,
+        "precision": 0.0,
+        "recall": 0.0,
+        "sample_count": "16663",
+        "uncertainty_rate": 0.007201584348556682
+      },
+      "class_1": {
+        "accuracy": 0.9643392268504645,
+        "precision": 1.0,
+        "recall": 0.9643392268504645,
+        "sample_count": "3337",
+        "uncertainty_rate": 0.0014983518130056938
+      }
+    },
+    "evaluation_stats": {
+      "total_episodes": 100,
+      "total_steps": 20000,
+      "avg_steps_per_episode": 200.0
+    }
+  },
+  "Cross-Dataset Performance": {},
+  "System Performance Metrics": {
+    "defender": {
+      "training": {
+        "total_time": 46.75111436843872,
+        "avg_time": 0.02226243541354225,
+        "count": 2100
+      },
+      "inference": {
+        "total_time": 745.7437510490417,
+        "avg_time": 0.0015866888320192377,
+        "count": 470000
+      }
+    },
+    "attacker": {
+      "training": {
+        "total_time": 28.26734685897827,
+        "avg_time": 0.01766709178686142,
+        "count": 1600
+      },
+      "inference": {
+        "total_time": 477.0954248905182,
+        "avg_time": 0.0013252650691403284,
+        "count": 360000
+      }
+    },
+    "system": {
+      "avg_cpu": 12.122,
+      "max_cpu": 31.2,
+      "avg_memory": 22.695999999999998,
+      "max_memory": 22.8,
+      "snapshots_taken": 50
+    }
+  }
+}
